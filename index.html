@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЗДАНО — Студентські роботи на замовлення</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-text">ЗДАНО</span>
+        <span class="logo-sub">/ zdano</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Послуги</a></li>
+        <li><a href="#why">Переваги</a></li>
+        <li><a href="#how">Як це працює</a></li>
+        <li><a href="#calc">Калькулятор</a></li>
+        <li><a href="#contact" class="nav-cta">Написати</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-badge reveal" data-delay="0">
+        <span class="badge-dot"></span> Приймаю замовлення
+      </div>
+      <h1 class="hero-title reveal" data-delay="100">
+        Твоя робота —<br />
+        <span class="gradient-text">моя задача</span>
+      </h1>
+      <p class="hero-subtitle reveal" data-delay="200">
+        Лабораторні, курсові, дипломні, реферати та програмні задачі.<br />
+        Без стресу. Вчасно. Якісно.
+      </p>
+      <div class="hero-buttons reveal" data-delay="300">
+        <a href="#calc" class="btn btn-primary">Порахувати вартість</a>
+        <a href="#contact" class="btn btn-secondary">Написати зараз</a>
+      </div>
+      <div class="hero-stats reveal" data-delay="400">
+        <div class="stat">
+          <span class="stat-num" data-target="200">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">виконаних робіт</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span>
+          <span class="stat-percent">%</span>
+          <span class="stat-label">задоволених клієнтів</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-hours"> год</span>
+          <span class="stat-label">середній час відповіді</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal" data-delay="0">
+        <span class="section-tag">Що я роблю</span>
+        <h2 class="section-title">Послуги</h2>
+        <p class="section-sub">Беруся за будь-яку студентську роботу — від простого реферату до повноцінного диплому</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" data-delay="0">
+          <div class="card-icon">🧪</div>
+          <h3>Лабораторні роботи</h3>
+          <p>Розв'язую задачі, пишу звіти, оформлюю результати по вашому шаблону</p>
+          <span class="card-price">від 150 грн</span>
+        </div>
+        <div class="service-card reveal" data-delay="100">
+          <div class="card-icon">📝</div>
+          <h3>Курсові роботи</h3>
+          <p>Повноцінна курсова з теоретичною частиною, практикою та висновками</p>
+          <span class="card-price">від 500 грн</span>
+        </div>
+        <div class="service-card reveal" data-delay="200">
+          <div class="card-icon">🎓</div>
+          <h3>Дипломні роботи</h3>
+          <p>Бакалаврські та магістерські роботи під ключ — від вступу до захисту</p>
+          <span class="card-price">від 1500 грн</span>
+        </div>
+        <div class="service-card reveal" data-delay="0">
+          <div class="card-icon">📄</div>
+          <h3>Реферати та есе</h3>
+          <p>Грамотно, по суті, з джерелами. Без надмірного академічного сухомлину</p>
+          <span class="card-price">від 200 грн</span>
+        </div>
+        <div class="service-card reveal" data-delay="100">
+          <div class="card-icon">💻</div>
+          <h3>Програмні задачі</h3>
+          <p>Python, C++, Java, JavaScript — напишу, поясню, допоможу захиститися</p>
+          <span class="card-price">від 300 грн</span>
+        </div>
+        <div class="service-card reveal" data-delay="200">
+          <div class="card-icon">📐</div>
+          <h3>Розрахункові роботи</h3>
+          <p>Математика, фізика, опір матеріалів, теормех та інші технічні дисципліни</p>
+          <span class="card-price">від 250 грн</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-left reveal" data-delay="0">
+          <span class="section-tag">Чому я?</span>
+          <h2 class="section-title">Без зайвих<br /><span class="gradient-text">обіцянок</span></h2>
+          <p>Я не обіцяю золотих гір — просто роблю свою роботу добре. Кожен проєкт отримує повну увагу, а не шаблонний підхід.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top: 2rem;">Перевірити на ділі</a>
+        </div>
+        <div class="why-right">
+          <div class="why-item reveal" data-delay="0">
+            <span class="why-num">01</span>
+            <div class="why-content">
+              <h4>Дедлайн — це святе</h4>
+              <p>Беруся тільки за те, що можу зробити вчасно. Без затримок і "ще трохи".</p>
+            </div>
+          </div>
+          <div class="why-item reveal" data-delay="100">
+            <span class="why-num">02</span>
+            <div class="why-content">
+              <h4>100% конфіденційність</h4>
+              <p>Ніхто не дізнається. Ваші дані і наше спілкування — тільки між нами.</p>
+            </div>
+          </div>
+          <div class="why-item reveal" data-delay="200">
+            <span class="why-num">03</span>
+            <div class="why-content">
+              <h4>Безкоштовні правки</h4>
+              <p>Якщо є зауваження від викладача — виправлю без доплати.</p>
+            </div>
+          </div>
+          <div class="why-item reveal" data-delay="300">
+            <span class="why-num">04</span>
+            <div class="why-content">
+              <h4>Прозора ціна</h4>
+              <p>Обговорюємо суму до початку роботи. Ніяких сюрпризів в кінці.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-header reveal" data-delay="0">
+        <span class="section-tag">Процес</span>
+        <h2 class="section-title">Як це працює</h2>
+        <p class="section-sub">Все просто — від першого повідомлення до готової роботи</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal" data-delay="0">
+          <div class="step-num">01</div>
+          <div class="step-icon">✍️</div>
+          <h3>Описуєш задачу</h3>
+          <p>Надсилаєш завдання, методичку чи вимоги. Чим більше деталей — тим точніша ціна</p>
+        </div>
+        <div class="step-arrow reveal" data-delay="50">→</div>
+        <div class="step reveal" data-delay="100">
+          <div class="step-num">02</div>
+          <div class="step-icon">💬</div>
+          <h3>Обговорюємо</h3>
+          <p>Уточнюємо терміни, обсяг, формат. Погоджуємо ціну — і беруся до роботи</p>
+        </div>
+        <div class="step-arrow reveal" data-delay="150">→</div>
+        <div class="step reveal" data-delay="200">
+          <div class="step-num">03</div>
+          <div class="step-icon">⚡</div>
+          <h3>Виконую роботу</h3>
+          <p>Роблю в узгоджений термін, якщо треба — є проміжні версії для перевірки</p>
+        </div>
+        <div class="step-arrow reveal" data-delay="250">→</div>
+        <div class="step reveal" data-delay="300">
+          <div class="step-num">04</div>
+          <div class="step-icon">🏆</div>
+          <h3>Отримуєш результат</h3>
+          <p>Готова робота у твоєму форматі. Здаєш — і насолоджуєшся вільним часом</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section class="calc-section" id="calc">
+    <div class="container">
+      <div class="section-header reveal" data-delay="0">
+        <span class="section-tag">Вартість</span>
+        <h2 class="section-title">Калькулятор</h2>
+        <p class="section-sub">Орієнтовна ціна — точна сума після обговорення деталей</p>
+      </div>
+      <div class="calc-wrapper reveal" data-delay="100">
+        <div class="calc-form">
+          <div class="calc-group">
+            <label class="calc-label">Тип роботи</label>
+            <select class="calc-select" id="calcType">
+              <option value="150">Лабораторна робота</option>
+              <option value="200">Реферат / Есе</option>
+              <option value="250">Розрахункова робота</option>
+              <option value="300">Програмна задача</option>
+              <option value="500">Курсова робота</option>
+              <option value="1500">Дипломна робота</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">Складність</label>
+            <div class="toggle-group" id="calcDifficulty">
+              <button class="toggle-btn active" data-val="1">Легка</button>
+              <button class="toggle-btn" data-val="1.4">Середня</button>
+              <button class="toggle-btn" data-val="2">Складна</button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">Терміновість</label>
+            <div class="toggle-group" id="calcUrgency">
+              <button class="toggle-btn active" data-val="1">7+ днів</button>
+              <button class="toggle-btn" data-val="1.3">3–7 днів</button>
+              <button class="toggle-btn" data-val="1.7">до 3 днів</button>
+              <button class="toggle-btn" data-val="2.2">до 24 год</button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">
+              Обсяг роботи
+              <span class="range-value" id="rangeVal">5 сторінок</span>
+            </label>
+            <input type="range" class="calc-range" id="calcPages" min="1" max="100" value="5" />
+            <div class="range-labels">
+              <span>1</span>
+              <span>100 сторінок</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-result">
+          <div class="result-label">Орієнтовна вартість</div>
+          <div class="result-price" id="calcResult">
+            <span class="result-num">150</span>
+            <span class="result-currency">грн</span>
+          </div>
+          <p class="result-note">Точна ціна — після обговорення деталей у чаті</p>
+          <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1.5rem;">
+            Замовити за цією ціною
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left reveal" data-delay="0">
+          <span class="section-tag">Зв'язок</span>
+          <h2 class="section-title">Пишіть —<br /><span class="gradient-text">відповім швидко</span></h2>
+          <p>Працюю щодня. Зазвичай відповідаю протягом кількох годин. Напишіть зараз — і ми вже сьогодні обговоримо вашу роботу.</p>
+          <div class="contact-buttons">
+            <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="btn-messenger btn-tg">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 13.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/></svg>
+              Telegram
+            </a>
+            <a href="viber://chat?number=YOUR_VIBER_NUMBER" class="btn-messenger btn-viber">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.4 0C6.39 0 2.01 2.21 2.01 7.54c0 2.71.92 4.67 2.47 5.97v2.82c0 .35.42.52.67.27l2.15-2.15c1.32.35 2.77.54 4.11.54 5 0 9.39-2.21 9.39-7.54S16.41 0 11.4 0zm5.72 9.87l-1.37.14c-.28.03-.52-.17-.55-.45l-.14-1.37c-.03-.28.17-.52.45-.55l1.37-.14c.28-.03.52.17.55.45l.14 1.37c.03.28-.17.52-.45.55zM11.4 2.23c4.29 0 7.16 1.9 7.16 5.31 0 3.42-2.87 5.31-7.16 5.31-1.29 0-2.56-.18-3.73-.49l-.51-.13-1.52 1.52v-2.1l-.38-.29C4.74 10.44 4 9.01 4 7.54c0-3.41 2.87-5.31 7.4-5.31z"/></svg>
+              Viber
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal" data-delay="150">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label class="form-label">Ваше ім'я</label>
+              <input type="text" class="form-input" id="formName" placeholder="Як до вас звертатись?" />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Telegram, Viber або Email</label>
+              <input type="text" class="form-input" id="formContact" placeholder="@username або email@mail.com" />
+              <span class="form-error" id="contactError"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Опишіть завдання</label>
+              <textarea class="form-input form-textarea" id="formMessage" placeholder="Тип роботи, дисципліна, дедлайн, особливі вимоги..."></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Надіслати заявку</button>
+            <div class="form-success" id="formSuccess">
+              <span>✓</span> Заявку отримано! Напишу вам найближчим часом.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-text">ЗДАНО</span>
+          <span class="logo-sub">/ zdano</span>
+        </div>
+        <p class="footer-copy">© 2026 Здано. Всі роботи виконуються виключно в навчальних цілях.</p>
+        <p class="footer-made">Зроблено з ☕ і відповідальністю</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
